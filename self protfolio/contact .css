@@ -1,0 +1,341 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#071c33  ;
+}
+.content
+{
+    height:88vh;
+    width:80%;
+    background-color:#071c33;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: -10px -10px 90px 30px rgba(255, 255, 0, 0.752);
+    border-radius: 20px;
+    border: 3px dashed white;
+    overflow-y:scroll;
+
+    transition: 1s;
+}
+:hover.content
+{
+    background-color: black;
+}
+.navbar
+{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 70px;
+    left: 70%;
+}
+.navbar a
+{
+    color: white;
+    font-family: montserrat;
+    margin: 15px;
+    text-decoration: none;
+    font-weight:bold;
+    transition: 0.3s;
+    display: inline-block;
+
+    animation: demotwo 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.navbar a:hover ,
+.navbar a.active
+{
+    color: yellow;
+    text-decoration: underline;
+}
+@keyframes demotwo
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+.social
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 47%;
+    top: 140%;
+    
+} 
+.social a
+{
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    border:3px solid yellow;
+    margin-left:15px;
+    padding:7px 10px;
+    border-radius:50%;
+
+    animation: demotwo 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+    
+    transition:0.7s;
+
+    
+}
+@keyframes demotwo
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+.social a:hover 
+{
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow;
+}
+.port
+{
+    color: white;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 50px;
+
+    animation: demo 1s ease forwards;
+    opacity: 0;
+}
+@keyframes demo
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+.contactme 
+{
+    width: 100%;
+    color: white;
+    font-family: montserrat;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.contactcontainer
+{
+    height: 600px;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 15%;
+
+}
+.contactinfo 
+{
+    color: white;
+    font-family: montserrat;
+    margin-top:50px;
+}
+input
+{
+    height: 40px;
+    width: 40%;
+    background: rgba( 248, 231, 28, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    border: 2px solid yellow;
+    margin-right: 65px;
+    margin-top: 35px;
+    text-decoration: none;
+    outline: none;
+    padding: 20px;
+
+    transition: 0.3s;
+
+}
+input:hover 
+{
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow;
+}
+
+::placeholder
+{
+    text-decoration: none;
+    border:none;
+    outline: none;
+}
+.tel
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 66%;
+    top: 35%;
+}
+.name 
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 35%;
+}
+.email 
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 58%;
+}
+.emailinput
+{
+    height: 40px;
+    width: 30%;
+    background: rgba( 248, 231, 28, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    border: 2px solid yellow;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 59%;
+    padding: 20px;
+    
+     
+}
+.Subject 
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 66%;
+    top: 58%;
+}
+.emailsubject
+{
+    
+    height: 40px;
+    width: 30%;
+    background: rgba( 248, 231, 28, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    border: 2px solid yellow;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 66%;
+    top: 59%;
+    padding: 20px;
+
+}
+textarea
+{
+    height:200px;
+    width: 60%;
+    background: rgba( 248, 231, 28, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+    border: 2px solid yellow;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 48%;
+    top: 89%;
+    padding: 20px;
+
+    transition: 0.3s;
+}
+::placeholder
+{
+    font-family: montserrat;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+textarea:hover 
+{
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow;
+}
+button
+{
+    height: 45px;
+    width: 120px;
+    border-radius: 15px;
+    color: black;
+    font-family: montserrat;
+    background-color: yellow;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 118%;
+    left: 43%;
+
+    animation: demotwo 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+    
+    transition:0.7s;
+
+}
+button:hover 
+{
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow;
+}
+@keyframes demotwo
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+.one 
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 130%;
+    left: 48%;
+}

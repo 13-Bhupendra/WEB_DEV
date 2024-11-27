@@ -1,0 +1,220 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#071c33  ;
+}
+.content
+{
+    height:88vh;
+    width:80%;
+    background-color:#071c33;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: -10px -10px 90px 30px rgba(255, 255, 0, 0.752);
+    border-radius: 20px;
+    border: 3px dashed white;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    transition: 1s;
+}
+:hover.content
+{
+    background-color: black;
+}
+.prof img
+{
+    height:520px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 83%;
+    top: 58%;
+    
+    
+}
+.contentme
+{
+    color: white;
+    font-family: montserrat;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 55%;
+    top: 55%;
+    width: 100%;
+}
+h4
+{
+    font-weight: 300;
+}
+button
+{
+    height: 45px;
+    width: 120px;
+    border-radius: 15px;
+    color: black;
+    font-family: montserrat;
+    background-color: yellow;
+    position: relative;
+    top: 250px;
+
+    animation: demotwo 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+    
+    transition:0.7s;
+
+}
+button:hover 
+{
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow;
+}
+@keyframes demotwo
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+h1
+{
+    position: relative;
+    top: 170px;
+    animation: slidebottom 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slidebottom
+{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+h2
+{
+    position: relative;
+    top: 170px;
+    animation: demo 1s ease forwards;
+    opacity: 0;
+}
+@keyframes demo
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+h4
+{
+    position: relative;
+    top: 200px;
+    animation: slideleft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideleft    
+{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+.navbar
+{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 70px;
+    left: 70%;
+}
+.navbar a
+{
+    color: white;
+    font-family: montserrat;
+    margin: 15px;
+    text-decoration: none;
+    font-weight:bold;
+    transition: 0.3s;
+    display: inline-block;
+
+    animation: demotwo 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--i));
+    
+}
+.navbar a:hover ,
+.navbar a.active
+{
+    color: yellow;
+    text-decoration: underline;
+}
+@keyframes demotwo
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }   
+}
+.port
+{
+    color: white;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 50px;
+
+    animation: demo 1s ease forwards;
+    opacity: 0;
+}
+@keyframes demo
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }   
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+ 
+ 
